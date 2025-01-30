@@ -138,7 +138,6 @@ pip install -r ../requirements.txt && cd ../validation && python3 model_validati
 
 - [Yolov8 Model Documentation](https://docs.ultralytics.com/models/yolov8/)
 - [Docker Documentation](https://docs.docker.com/)
-- [Trash Detection Dataset](https://universe.roboflow.com/nora-slimani/trash-detection-otdmj)
 - [TACO Dataset](http://tacodataset.org/)
 
 ---
