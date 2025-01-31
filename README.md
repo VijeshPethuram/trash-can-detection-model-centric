@@ -17,7 +17,7 @@ Participants are invited to:
 
 You can modify the **model architecture** freely
 
-## 🛠️ **Getting Started Without Docker**
+## 🛠️ **Getting Started**
 
 ### 💻 **Running the scripts**
 
