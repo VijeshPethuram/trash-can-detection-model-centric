@@ -50,7 +50,6 @@ val_ds   = val_ds.map(lambda x, y: (rescale(x), y))
 
 
 # Import model because of transfer learning
-# https://github.com/keras-team/keras-applications/blob/master/keras_applications/mobilenet_v2.py
 base_model = MobileNetV2(input_shape=(MODEL_INPUT_WIDTH, MODEL_INPUT_HEIGHT, 3),
                          include_top=False,
                          weights='imagenet',
@@ -101,8 +100,6 @@ model.save(TF_MODEL)
 
 
 test_dir = "DATASET/TEST"
-
-
 test_ds = tf.keras.utils.image_dataset_from_directory(test_dir,
                                                       interpolation="bilinear",
                                                       image_size=(MODEL_INPUT_WIDTH, MODEL_INPUT_HEIGHT))
@@ -155,8 +152,6 @@ for i_value, o_value in test_ds0.batch(1):
 
 print("Accuracy:", num_correct_samples/num_total_samples)
 
-
-# In[22]:
 
 
 open("model_nano.tflite", "wb").write(tfl_model)
